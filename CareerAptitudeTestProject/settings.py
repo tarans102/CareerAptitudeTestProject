@@ -23,12 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-b5@jk!i9^-st0w5-3)47gysxlnf_jbd=szjjz2lhj1-)g*mj_4"
+SECRET_KEY = os.environ.get("SECRET_KEY", default="your secret key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "RENDER" not in os.environ
 
-ALLOWED_HOSTS = ["mysite-s2ky.onrender.com"]
+ALLOWED_HOSTS = []
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get("RENDER_EXTERNAL_HOSTNAME")
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
@@ -88,7 +92,8 @@ WSGI_APPLICATION = "CareerAptitudeTestProject.wsgi.application"
 DATABASES = {
     "default": dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default="postgresql://postgres:postgresABC123@localhost:5432/CATAppDatabase",
+        # default="postgresql://postgres:postgresABC123@localhost:5432/CATAppDatabase",
+        default=os.environ.get("DATABASE_URL"),
         conn_max_age=600,
     )
 }
