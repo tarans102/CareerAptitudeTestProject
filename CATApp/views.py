@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return render(request, "CATApp\\index.html")
+    return render(request, "index.html")
 
 
 def question(request, question_number):
@@ -13,7 +13,7 @@ def question(request, question_number):
         request.session.flush()
     question = Question.objects.get(question_number=question_number)
     if question:
-        return render(request, "CATApp\\question.html", context={"question": question})
+        return render(request, "question.html", context={"question": question})
     else:
         return results(request)
 
@@ -51,4 +51,4 @@ def results(request):
     }
     keys = list(sorted_dict.keys())[0:5]
     new_dict = {key: sorted_dict[key] for key in keys}
-    return render(request, "CATApp\\result.html", context={"results": new_dict})
+    return render(request, "result.html", context={"results": new_dict})
