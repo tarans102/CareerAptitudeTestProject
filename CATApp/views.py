@@ -1,4 +1,4 @@
-from CATApp.models import Choice, Question
+from CATApp.models import Choice, Question, Response
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
@@ -35,25 +35,37 @@ def answer(request, question_number):
 
 
 def results(request):
+    response_dict = {}
     career_dict = {}
     for question in Question.objects.all():
         selectedChoice = Choice.objects.get(
             id=request.session[f"question{question.id}"]
         )
+        response_dict[question.id] = selectedChoice.id
+
         for career in selectedChoice.career["career"]:
             if career not in career_dict:
                 career_dict[career] = 1
             else:
                 career_dict[career] += 1
 
-    sorted_dict = {
+    career_dict_sorted = {
         k: v
         for k, v in sorted(career_dict.items(), key=lambda item: item[1], reverse=True)
     }
-    keys = list(sorted_dict.keys())[0:5]
-    new_dict = {key: sorted_dict[key] for key in keys}
+    Response.objects.create(
+        username=request.session["username"],
+        response=response_dict,
+        results=career_dict_sorted,
+    )
+    keys = list(career_dict_sorted.keys())[0:5]
+    career_dict_short = {key: career_dict_sorted[key] for key in keys}
     return render(
         request,
         "result.html",
-        context={"results": new_dict, "username": request.session["username"]},
+        context={
+            "results": career_dict_short,
+            "username": request.session["username"],
+            "numQuestions": len(Question.objects.all()),
+        },
     )

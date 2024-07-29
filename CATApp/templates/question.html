@@ -144,6 +144,7 @@
 
         .option:hover {
             background-color: grey;
+            cursor: pointer;
         }
 
         .nextButton {
@@ -188,7 +189,7 @@
         <form method="post" action="{% url 'CATApp:answer' question.question_number %}" id="form1">
             {% csrf_token %}
             <div class="questionContainer">
-                <div class="questionLabel">Question {{question.question_number}}</div>
+                <div class="questionLabel">Question {{question.question_number}} of {{numQuestions}}</div>
                 <legend>{{question.question_text}}</legend>
             </div>
             <div class="optionsContainer">

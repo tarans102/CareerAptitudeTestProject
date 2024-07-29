@@ -29,3 +29,9 @@ class Choice(models.Model):
             + ": "
             + self.choice_text
         )
+
+
+class Response(models.Model):
+    username = models.CharField(max_length=200)
+    response = models.JSONField(None)
+    results = models.JSONField(None)
