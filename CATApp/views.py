@@ -14,7 +14,14 @@ def question(request, question_number):
         request.session["username"] = request.POST["name"]
     question = Question.objects.get(question_number=question_number)
     if question:
-        return render(request, "question.html", context={"question": question})
+        return render(
+            request,
+            "question.html",
+            context={
+                "question": question,
+                "numQuestions": len(Question.objects.all()),
+            },
+        )
     else:
         return results(request)
 
@@ -66,6 +73,5 @@ def results(request):
         context={
             "results": career_dict_short,
             "username": request.session["username"],
-            "numQuestions": len(Question.objects.all()),
         },
     )

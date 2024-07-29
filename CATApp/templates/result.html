@@ -169,5 +169,23 @@
         <a class="attemptButton" href="{% url 'CATApp:index' %}">Attempt Again</a>
     </div>
 </body>
+<script>
+    var formContainer = document.querySelector(".formContainer");
+    var palette = document.querySelector(".palette");
+
+    function setFormPosition() {
+        if (formContainer.offsetHeight + 2 * palette.offsetHeight + 32 > window.innerHeight) {
+            formContainer.style.top = palette.offsetHeight + 16 + "px";
+            formContainer.style.transform = "translateY(0%)";
+        } else {
+            formContainer.style.position = "absolute";
+            formContainer.style.top = "50%";
+            formContainer.style.transform = "translateY(-50%)";
+        }
+    }
+
+    window.onload = setFormPosition
+    window.onresize = setFormPosition
+</script>
 
 </html>

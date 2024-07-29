@@ -27,8 +27,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
             background-color: #c9d6ff;
             background: linear-gradient(to right, #e2e2e2, #c9d6ff);
         }
@@ -210,6 +208,21 @@
 
         var allOptions = document.querySelectorAll(".option");
         var nextButton = document.getElementsByClassName("nextButton")[0];
+        var formContainer = document.querySelector(".formContainer");
+        var palette = document.querySelector(".palette");
+
+        function setFormPosition() {
+            if (formContainer.offsetHeight + 2 * palette.offsetHeight + 32 > window.innerHeight) {
+                formContainer.style.top = palette.offsetHeight + 16 + "px";
+                formContainer.style.transform = "translateY(0%)";
+            } else {
+                formContainer.style.position = "absolute";
+                formContainer.style.top = "50%";
+                formContainer.style.transform = "translateY(-50%)";
+            }
+        }
+        window.onload = setFormPosition
+        window.onresize = setFormPosition
 
         function selectOption(e) {
             var target;
