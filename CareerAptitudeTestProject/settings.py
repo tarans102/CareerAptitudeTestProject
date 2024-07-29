@@ -24,9 +24,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY", default="your secret key")
+# SECRET_KEY = "django-insecure-b5@jk!i9^-st0w5-3)47gysxlnf_jbd=szjjz2lhj1-)g*mj_4"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = "RENDER" not in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -92,8 +93,8 @@ WSGI_APPLICATION = "CareerAptitudeTestProject.wsgi.application"
 DATABASES = {
     "default": dj_database_url.config(
         # Replace this value with your local database's connection string.
-        # default="postgresql://postgres:postgresABC123@localhost:5432/CATAppDatabase",
-        default=os.environ.get("DATABASE_URL"),
+        default="postgresql://postgres:postgresABC123@localhost:5432/CATAppDatabase",
+        # default=os.environ.get("DATABASE_URL"),
         conn_max_age=600,
     )
 }
@@ -136,7 +137,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 # This production code might break development mode, so we check whether we're in DEBUG mode
-if not DEBUG:
+if DEBUG:
     # Tell Django to copy static assets into a path called `staticfiles` (this is specific to Render)
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use

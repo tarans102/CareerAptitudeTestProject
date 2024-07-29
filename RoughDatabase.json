@@ -1,0 +1,1211 @@
+1. What subjects do you enjoy studying the most?
+Science {
+    "career": [
+        "Doctor",
+        "Engineer",
+        "Research Scientist"
+    ]
+}
+Mathematics {
+    "career": [
+        "Data Analyst",
+        "Mathematician",
+        "Actuary"
+    ]
+}
+Literature {
+    "career": [
+        "Writer",
+        "Editor",
+        "Teacher"
+    ]
+}
+History {
+    "career": [
+        "Historian",
+        "Archaeologist",
+        "Museum Curator"
+    ]
+}
+Art {
+    "career": [
+        "Graphic Designer",
+        "Artist",
+        "Art Director"
+    ]
+}
+
+2. What activities do you enjoy doing in your free time?
+Sports {
+    "career": [
+        "Athlete",
+        "Sports Coach",
+        "Physical Therapist"
+    ]
+}
+Reading {
+    "career": [
+        "Librarian",
+        "Book Reviewer",
+        "Academic"
+    ]
+}
+Playing video games {
+    "career": [
+        "Game Developer",
+        "Software Tester",
+        "Esports Player"
+    ]
+}
+Travelling {
+    "career": [
+        "Travel Writer",
+        "Tour Guide",
+        "Flight Attendant"
+    ]
+}
+Cooking {
+    "career": [
+        "Chef",
+        "Food Critic",
+        "Nutritionist"
+    ]
+}
+
+3. What are your hobbies?
+Painting {
+    "career": [
+        "Artist",
+        "Art Teacher",
+        "Illustrator"
+    ]
+}
+Coding {
+    "career": [
+        "Software Developer",
+        "Web Developer",
+        "IT Specialist"
+    ]
+}
+Gardening {
+    "career": [
+        "Botanist",
+        "Landscape Architect",
+        "Horticulturist"
+    ]
+}
+Photography {
+    "career": [
+        "Photographer",
+        "Photojournalist",
+        "Videographer"
+    ]
+}
+Music {
+    "career": [
+        "Musician",
+        "Music Teacher",
+        "Sound Engineer"
+    ]
+}
+
+4. Is there a particular job or industry you find fascinating?
+Healthcare {
+    "career": [
+        "Doctor",
+        "Nurse",
+        "Pharmacist"
+    ]
+}
+Technology {
+    "career": [
+        "Software Engineer",
+        "Data Scientist",
+        "IT Consultant"
+    ]
+}
+Education {
+    "career": [
+        "Teacher",
+        "Professor",
+        "Academic Administrator"
+    ]
+}
+Finance {
+    "career": [
+        "Banker",
+        "Financial Analyst",
+        "Accountant"
+    ]
+}
+Media {
+    "career": [
+        "Journalist",
+        "Public Relations Specialist",
+        "Media Planner"
+    ]
+}
+// Skills and Strengths
+
+5. What are your strongest skills?
+Analytical {
+    "career": [
+        "Data Analyst",
+        "Financial Analyst",
+        "Research Scientist"
+    ]
+}
+Creative {
+    "career": [
+        "Graphic Designer",
+        "Writer",
+        "Marketing Specialist"
+    ]
+}
+Interpersonal {
+    "career": [
+        "Counselor",
+        "Social Worker",
+        "HR Manager"
+    ]
+}
+Technical {
+    "career": [
+        "Engineer",
+        "IT Specialist",
+        "Mechanic"
+    ]
+}
+Organisational {
+    "career": [
+        "Project Manager",
+        "Event Planner",
+        "Administrator"
+    ]
+}
+
+6. What subjects do you excel in?
+Mathematics {
+    "career": [
+        "Statistician",
+        "Actuary",
+        "Economist"
+    ]
+}
+Science {
+    "career": [
+        "Chemist",
+        "Biologist",
+        "Environmental Scientist"
+    ]
+}
+Language Arts {
+    "career": [
+        "Editor",
+        "Copywriter",
+        "Translator"
+    ]
+}
+Social Studies {
+    "career": [
+        "Sociologist",
+        "Anthropologist",
+        "Political Scientist"
+    ]
+}
+Computer Science {
+    "career": [
+        "Software Developer",
+        "Systems Analyst",
+        "Cybersecurity Specialist"
+    ]
+}
+
+7. Do you have any particular talents or natural abilities?
+Public Speaking {
+    "career": [
+        "Lawyer",
+        "Politician",
+        "Motivational Speaker"
+    ]
+}
+Problem-Solving {
+    "career": [
+        "Engineer",
+        "Detective",
+        "Business Consultant"
+    ]
+}
+Artistic {
+    "career": [
+        "Painter",
+        "Graphic Designer",
+        "Animator"
+    ]
+}
+Logical Thinking {
+    "career": [
+        "Programmer",
+        "Mathematician",
+        "Scientist"
+    ]
+}
+Leadership {
+    "career": [
+        "Manager",
+        "Entrepreneur",
+        "Military Officer"
+    ]
+}
+
+8. What types of tasks do you find easy to complete?
+Detailed {
+    "career": [
+        "Accountant",
+        "Quality Control Specialist",
+        "Auditor"
+    ]
+}
+Hands-On {
+    "career": [
+        "Mechanic",
+        "Electrician",
+        "Carpenter"
+    ]
+}
+Research {
+    "career": [
+        "Academic Researcher",
+        "Market Research Analyst",
+        "Librarian"
+    ]
+}
+Planning {
+    "career": [
+        "Urban Planner",
+        "Event Coordinator",
+        "Supply Chain Manager"
+    ]
+}
+Writing {
+    "career": [
+        "Author",
+        "Journalist",
+        "Content Creator"
+    ]
+}
+//Values and Preferences
+
+9. What is more important to you in a job?
+High Salary {
+    "career": [
+        "Investment Banker",
+        "Corporate Lawyer",
+        "Surgeon"
+    ]
+}
+Job Satisfaction {
+    "career": [
+        "Teacher",
+        "Social Worker",
+        "Artist"
+    ]
+}
+Work-Life Balance {
+    "career": [
+        "Freelancer",
+        "HR Specialist",
+        "Government Employee"
+    ]
+}
+Job Security {
+    "career": [
+        "Public Sector Employee",
+        "Healthcare Professional",
+        "Teacher"
+    ]
+}
+
+10. Would you prefer working independently or as part of a team?
+Independently {
+    "career": [
+        "Freelance Writer",
+        "Research Scientist",
+        "Consultant"
+    ]
+}
+As part of a team {
+    "career": [
+        "Project Manager",
+        "Sales Representative",
+        "Nurse"
+    ]
+}
+
+11.Do you prefer a structured routine or a more flexible work environment?
+Structured Routine {
+    "career": [
+        "Accountant",
+        "Administrative Assistant",
+        "Teacher"
+    ]
+}
+Flexible Work Environment {
+    "career": [
+        "Freelance Designer",
+        "Real Estate Agent",
+        "Consultant"
+    ]
+}
+
+12. How important is it for you to help others in your career?
+Very Important {
+    "career": [
+        "Doctor",
+        "Nurse",
+        "Social Worker"
+    ]
+}
+Somewhat Important {
+    "career": [
+        "Teacher",
+        "HR Specialist",
+        "Customer Service Representative"
+    ]
+}
+Not Very Important {
+    "career": [
+        "Stockbroker",
+        "Software Developer",
+        "Engineer"
+    ]
+}
+//Goals and Ambitions
+
+13. What are your short-term and long-term career goals?
+Short-term: Gain experience; Long-term: Leadership {
+    "career": [
+        "Marketing Manager",
+        "Business Executive"
+    ]
+}
+Short-term: Learn new skills; Long-term: Specialization {
+    "career": [
+        "IT Specialist",
+        "Surgeon"
+    ]
+}
+Short-term: Financial stability; Long-term: Entrepreneurship {
+    "career": [
+        "Entrepreneur",
+        "Financial Advisor"
+    ]
+}
+
+14. Where do you see yourself in 5 or 10 years?
+In a senior position in a company {
+    "career": [
+        "Manager",
+        "Director",
+        "VP"
+    ]
+}
+Running your own business {
+    "career": [
+        "Entrepreneur",
+        "Consultant"
+    ]
+}
+Leading research projects {
+    "career": [
+        "Lead Scientist",
+        "Research Director"
+    ]
+}
+
+15. What kind of lifestyle do you envision for yourself?
+High-income lifestyle {
+    "career": [
+        "Investment Banker",
+        "Corporate Lawyer"
+    ]
+}
+Balanced lifestyle {
+    "career": [
+        "Teacher",
+        "Government Employee"
+    ]
+}
+Adventurous lifestyle {
+    "career": [
+        "Travel Blogger",
+        "Photographer"
+    ]
+}
+
+16. Are you willing to relocate for your job?
+Yes {
+    "career": [
+        "Diplomat",
+        "International Business Manager"
+    ]
+}
+No {
+    "career": [
+        "Local Government Employee",
+        "Teacher"
+    ]
+}
+// Educational Background and Experience
+
+17. What is your highest level of education?
+High School {
+    "career": [
+        "Technician",
+        "Sales Associate"
+    ]
+}
+Bachelor’s Degree {
+    "career": [
+        "Software Developer",
+        "Marketing Specialist"
+    ]
+}
+Master’s Degree {
+    "career": [
+        "Data Scientist",
+        "Research Analyst"
+    ]
+}
+PhD {
+    "career": [
+        "Professor",
+        "Research Scientist"
+    ]
+}
+
+18. Have you had any work experience, internships, or volunteer experience?
+Yes, in a related field {
+    "career": [
+        "Engineer",
+        "Accountant"
+    ]
+}
+Yes, in an unrelated field {
+    "career": [
+        "Career Changer",
+        "Entry-Level Position"
+    ]
+}
+No experience {
+    "career": [
+        "Entry-Level Job",
+        "Intern"
+    ]
+}
+
+19. What courses or certifications have you completed?
+Technical Certifications {
+    "career": [
+        "IT Specialist",
+        "Network Engineer"
+    ]
+}
+Professional Courses {
+    "career": [
+        "Project Manager",
+        "Certified Public Accountant"
+    ]
+}
+No formal courses {
+    "career": [
+        "Self-Taught",
+        "Entrepreneur"
+    ]
+}
+
+20. Are you interested in pursuing further education or training?
+Yes {
+    "career": [
+        "Academic",
+        "Medical Professional"
+    ]
+}
+No {
+    "career": [
+        "Entrepreneur",
+        "Freelancer"
+    ]
+}
+// Work Environment Preferences
+
+21. Do you prefer working indoors or outdoors?
+Indoors {
+    "career": [
+        "Office Worker",
+        "Software Developer"
+    ]
+}
+Outdoors {
+    "career": [
+        "Environmental Scientist",
+        "Construction Worker"
+    ]
+}
+
+22. Where would you rather work?
+Corporate Office {
+    "career": [
+        "Accountant",
+        "HR Manager"
+    ]
+}
+Creative Studio {
+    "career": [
+        "Graphic Designer",
+        "Animator"
+    ]
+}
+Lab {
+    "career": [
+        "Chemist",
+        "Biologist"
+    ]
+}
+In the Field {
+    "career": [
+        "Field Engineer",
+        "Geologist"
+    ]
+}
+
+23. Do you prefer a fast-paced work environment or a more relaxed one?
+Fast-Paced {
+    "career": [
+        "Stockbroker",
+        "Emergency Room Nurse"
+    ]
+}
+Relaxed {
+    "career": [
+        "Librarian",
+        "Researcher"
+    ]
+}
+
+24. Are you comfortable with a job that requires travel?
+Yes {
+    "career": [
+        "Sales Executive",
+        "Travel Writer"
+    ]
+}
+No {
+    "career": [
+        "Data Analyst",
+        "Teacher"
+    ]
+}
+// Problem-Solving and Decision-Making
+
+25. How do you approach problem-solving?
+Analytical Approach {
+    "career": [
+        "Data Scientist",
+        "Engineer"
+    ]
+}
+Creative Approach {
+    "career": [
+        "Marketing Specialist",
+        "Artist"
+    ]
+}
+Practical Approach {
+    "career": [
+        "Technician",
+        "Mechanic"
+    ]
+}
+Strategic Approach {
+    "career": [
+        "Business Consultant",
+        "Military Officer"
+    ]
+}
+
+26.Do you enjoy taking on leadership roles?
+Yes {
+    "career": [
+        "Manager",
+        "Project Leader"
+    ]
+}
+No {
+    "career": [
+        "Individual Contributor",
+        "Researcher"
+    ]
+}
+
+27. How do you handle stress and pressure?
+Thrive Under Pressure {
+    "career": [
+        "Surgeon",
+        "Stock Trader"
+    ]
+}
+Prefer Low-Stress Jobs {
+    "career": [
+        "Librarian",
+        "Administrative Assistant"
+    ]
+}
+
+28. Do you prefer making decisions quickly or after careful consideration?
+Quickly {
+    "career": [
+        "Emergency Services",
+        "Pilot"
+    ]
+}
+After Careful Consideration {
+    "career": [
+        "Accountant",
+        "Lawyer"
+    ]
+}
+// Personality Traits
+
+29. Are you more introverted or extroverted?
+Introverted {
+    "career": [
+        "Programmer",
+        "Writer"
+    ]
+}
+Extroverted {
+    "career": [
+        "Sales Manager",
+        "Public Relations Specialist"
+    ]
+}
+
+30. Do you prefer working with data and numbers, or with people and ideas?
+Data and Numbers {
+    "career": [
+        "Data Analyst",
+        "Accountant"
+    ]
+}
+People and Ideas {
+    "career": [
+        "Teacher",
+        "Social Worker"
+    ]
+}
+
+31. How do you handle feedback and criticism?
+Constructively {
+    "career": [
+        "Designer",
+        "Writer"
+    ]
+}
+Prefer Minimal Feedback {
+    "career": [
+        "Freelancer",
+        "Research Scientist"
+    ]
+}
+
+32. What motivates you the most in your work?
+Achievement {
+    "career": [
+        "Salesperson",
+        "Lawyer"
+    ]
+}
+Creativity {
+    "career": [
+        "Artist",
+        "Advertising Executive"
+    ]
+}
+Helping Others {
+    "career": [
+        "Nurse",
+        "Counselor"
+    ]
+}
+Stability {
+    "career": [
+        "Teacher",
+        "Government Employee"
+    ]
+}
+// Financial Considerations
+
+33. What is your expected salary range?
+High {
+    "career": [
+        "Corporate Lawyer",
+        "Investment Banker"
+    ]
+}
+Medium {
+    "career": [
+        "Teacher",
+        "Marketing Specialist"
+    ]
+}
+Low {
+    "career": [
+        "Nonprofit Worker",
+        "Entry-Level Job"
+    ]
+}
+
+How important are benefits such as health insurance, retirement plans, and vacation time?
+Very Important {
+    "career": [
+        "Government Employee",
+        "Corporate Job"
+    ]
+}
+Somewhat Important {
+    "career": [
+        "Small Business Employee",
+        "Start-Up"
+    ]
+}
+Not Important {
+    "career": [
+        "Freelancer",
+        "Entrepreneur"
+    ]
+}
+
+Do you have any financial obligations that might influence your career choice?
+Yes {
+    "career": [
+        "Look for High Salary Jobs"
+    ]
+}
+No {
+    "career": [
+        "Open to Various Options"
+    ]
+}
+
+Are you looking for a job that offers opportunities for financial growth and advancement?
+Yes {
+    "career": [
+        "Corporate Jobs",
+        "Sales"
+    ]
+}
+No {
+    "career": [
+        "Stable Jobs",
+        "Teaching"
+    ]
+}
+//Adaptability and Learning
+
+Are you open to learning new skills and technologies?
+
+Yes {
+    "career": [
+        "IT Specialist",
+        "Engineer"
+    ]
+}
+No {
+    "career": [
+        "Traditional Jobs",
+        "Craftsman"
+    ]
+}
+
+How do you handle changes in your work environment?
+Adapt Easily {
+    "career": [
+        "Consultant",
+        "Entrepreneur"
+    ]
+}
+Prefer Stability {
+    "career": [
+        "Government Employee",
+        "Teacher"
+    ]
+}
+
+Do you enjoy continuous learning and professional development?
+Yes {
+    "career": [
+        "Academic",
+        "Medical Professional"
+    ]
+}
+No {
+    "career": [
+        "Practical Jobs",
+        "Craftsman"
+    ]
+}
+
+How quickly do you adapt to new situations?
+Quickly {
+    "career": [
+        "Consultant",
+        "Travel Writer"
+    ]
+}
+Slowly {
+    "career": [
+        "Administrative Assistant",
+        "Librarian"
+    ]
+}
+// Lifestyle and Work-Life Balance
+
+How many hours a week are you willing to work?
+40 hours {
+    "career": [
+        "Teacher",
+        "Office Worker"
+    ]
+}
+50-60 hours {
+    "career": [
+        "Manager",
+        "Lawyer"
+    ]
+}
+More than 60 hours {
+    "career": [
+        "Entrepreneur",
+        "Investment Banker"
+    ]
+}
+
+Do you prefer a job with regular hours or one with flexible hours?
+Regular Hours {
+    "career": [
+        "Office Job",
+        "Teacher"
+    ]
+}
+Flexible Hours {
+    "career": [
+        "Freelancer",
+        "Consultant"
+    ]
+}
+
+How important is it for you to have a good work-life balance?
+Very Important {
+    "career": [
+        "Government Employee",
+        "HR Specialist"
+    ]
+}
+Somewhat Important {
+    "career": [
+        "Corporate Job",
+        "Sales"
+    ]
+}
+Not Important {
+    "career": [
+        "Entrepreneur",
+        "Stock Trader"
+    ]
+}
+
+Are you comfortable with a job that requires overtime or weekend work?
+Yes {
+    "career": [
+        "Hospitality",
+        "Emergency Services"
+    ]
+}
+No {
+    "career": [
+        "9-5 Office Job",
+        "Teaching"
+    ]
+}
+//Problem-Solving and Creativity
+
+When faced with a difficult problem, do you prefer to brainstorm multiple solutions or dive into researching existing methods?
+Brainstorm multiple solutions {
+    "career": [
+        "Creative roles: Designer",
+        "Marketing Specialist"
+    ]
+}
+Research existing methods {
+    "career": [
+        "Analytical roles: Engineer",
+        "Scientist"
+    ]
+}
+
+Do you often find yourself thinking about how to improve everyday objects or processes?
+Yes {
+    "career": [
+        "Innovative roles: Product Designer",
+        "Process Engineer"
+    ]
+}
+No {
+    "career": [
+        "Operational roles: Manager",
+        "Administrator"
+    ]
+}
+
+How do you typically spend your time when you encounter a challenge that doesn’t have a clear solution?
+Experiment with different approaches {
+    "career": [
+        "Creative roles: Artist",
+        "Entrepreneur"
+    ]
+}
+Seek advice and gather information {
+    "career": [
+        "Research roles: Analyst",
+        "Research Scientist"
+    ]
+}
+// Interaction with Others
+
+Do you enjoy working on group projects, or do you prefer to work on tasks alone?
+Group projects {
+    "career": [
+        "Team-oriented roles: Project Manager",
+        "Sales Executive"
+    ]
+}
+Tasks alone {
+    "career": [
+        "Independent roles: Writer",
+        "Researcher"
+    ]
+}
+
+How do you feel when you have to give a presentation in front of a large audience?
+Excited and energized {
+    "career": [
+        "Public-facing roles: Teacher",
+        "Public Relations Specialist"
+    ]
+}
+Nervous but capable {
+    "career": [
+        "Supportive roles: Analyst",
+        "Technical Specialist"
+    ]
+}
+Uncomfortable and avoidant {
+    "career": [
+        "Behind-the-scenes roles: Data Analyst",
+        "Lab Technician"
+    ]
+}
+
+When working in a team, are you more likely to take the lead or support others in their roles?
+Take the lead {
+    "career": [
+        "Leadership roles: Manager",
+        "Team Leader"
+    ]
+}
+Support others {
+    "career": [
+        "Supportive roles: Assistant",
+        "Coordinator"
+    ]
+}
+// Decision-Making and Risk-Taking
+
+Do you prefer making decisions based on intuition or detailed analysis?
+Intuition {
+    "career": [
+        "Creative roles: Artist",
+        "Marketing Specialist"
+    ]
+}
+Detailed analysis {
+    "career": [
+        "Analytical roles: Data Scientist",
+        "Accountant"
+    ]
+}
+
+How do you feel about taking risks in your professional life?
+Comfortable with high risks {
+    "career": [
+        "Entrepreneurial roles: Entrepreneur",
+        "Stock Trader"
+    ]
+}
+Prefer calculated risks {
+    "career": [
+        "Strategic roles: Financial Analyst",
+        "Business Consultant"
+    ]
+}
+Avoid risks {
+    "career": [
+        "Stable roles: Teacher",
+        "Government Employee"
+    ]
+}
+
+When making decisions, do you rely more on your own judgment or seek input from others?
+Own judgment {
+    "career": [
+        "Independent roles: Freelancer",
+        "Research Scientist"
+    ]
+}
+Seek input {
+    "career": [
+        "Collaborative roles: Team Manager",
+        "Consultant"
+    ]
+}
+//Personal and Professional Goals
+
+Do you set long-term goals for yourself, or do you prefer to focus on short-term achievements?
+Long-term goals {
+    "career": [
+        "Strategic roles: Business Planner",
+        "Academic Researcher"
+    ]
+}
+Short-term achievements {
+    "career": [
+        "Tactical roles: Salesperson",
+        "Project Coordinator"
+    ]
+}
+
+How important is it for you to see the immediate results of your work?
+Very important {
+    "career": [
+        "Result-oriented roles: Sales",
+        "Marketing"
+    ]
+}
+Not very important {
+    "career": [
+        "Process-oriented roles: Scientist",
+        "Educator"
+    ]
+}
+
+Do you envision yourself in a specialized role or a generalist role in the future?
+Specialized role {
+    "career": [
+        "Expert roles: Surgeon",
+        "Specialist Engineer"
+    ]
+}
+Generalist role {
+    "career": [
+        "Versatile roles: General Manager",
+        "Consultant"
+    ]
+}
+
+Work Style and Environment
+
+Do you thrive in a fast-paced, high-pressure environment, or do you prefer a calm, steady work setting?
+Fast-paced, high-pressure {
+    "career": [
+        "Dynamic roles: Emergency Medical Technician",
+        "Stock Trader"
+    ]
+}
+Calm, steady {
+    "career": [
+        "Stable roles: Librarian",
+        "Researcher"
+    ]
+}
+
+Are you more productive when you have a clear set of guidelines or when you have the freedom to decide how to approach your work?
+Clear set of guidelines {
+    "career": [
+        "Structured roles: Accountant",
+        "Administrator"
+    ]
+}
+Freedom to decide {
+    "career": [
+        "Flexible roles: Creative Director",
+        "Consultant"
+    ]
+}
+
+Do you prefer a predictable workday with routine tasks or a varied workday with different challenges?
+Predictable workday {
+    "career": [
+        "Routine roles: Accountant",
+        "Office Manager"
+    ]
+}
+Varied workday {
+    "career": [
+        "Dynamic roles: Journalist",
+        "Event Planner"
+    ]
+}
+//Adaptability and Learning
+
+How do you typically react to changes in your work environment or job responsibilities?
+Embrace changes {
+    "career": [
+        "Adaptable roles: Consultant",
+        "Project Manager"
+    ]
+}
+Need time to adjust {
+    "career": [
+        "Stable roles: Teacher",
+        "Office Worker"
+    ]
+}
+
+Do you actively seek out opportunities for learning and professional development?
+Yes {
+    "career": [
+        "Continuous learning roles: Academic",
+        "Medical Professional"
+    ]
+}
+No {
+    "career": [
+        "Practical application roles: Technician",
+        "Craftsman"
+    ]
+}
+
+When faced with a new technology or tool, do you prefer to learn by experimenting on your own or following a structured tutorial?
+Experimenting on your own {
+    "career": [
+        "Innovative roles: Software Developer",
+        "Entrepreneur"
+    ]
+}
+Structured tutorial {
+    "career": [
+        "Methodical roles: Engineer",
+        "Technical Specialist"
+    ]
+}
