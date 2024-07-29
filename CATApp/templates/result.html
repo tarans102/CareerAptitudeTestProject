@@ -1,65 +1,173 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <title>Congratulations</title>
     <style>
         :root {
             --primary-color: #8c2c8d;
             --primary-color-hover: #6e226f;
+            --secondary-color: #d182d4;
+            --palette-color: #7a1f79;
         }
 
-        table {
-            border-radius: 8px;
-            border: 2px solid #cfcfcf;
-            width: 512px;
-            border-collapse: collapse;
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #c9d6ff;
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
         }
 
-        th {
-            color: white;
-            font-family: Montserrat;
-            font-weight: normal;
-            font-size: 28px;
-            padding: 8px;
+        .palette {
+            background-color: var(--palette-color);
+            width: 100%;
+            padding: 16px;
+            text-align: left;
+            color: #ffffff;
+            font-family: Poppins, sans-serif;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .palette .logoContainer {
             background-color: var(--primary-color);
-            border: 2px solid #6e226f
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+            border: 3px solid #ffffff;
         }
 
-        td {
-            border: none;
-            padding: 8px;
-            border: 2px solid #cfcfcf
+        .palette .logoContainer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
         }
 
-        tr:nth-child(even) {
-            background-color: #e3e3e3;
+        .palette .textContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .palette h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .palette p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .formContainer {
+            background-color: #fff;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 450px;
+            padding: 2rem;
+            box-sizing: border-box;
+            position: relative;
+            box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            /* Space below the palette */
+        }
+
+        .formContainer h1 {
+            font-family: Poppins, sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .formContainer h2 {
+            font-family: Montserrat, sans-serif;
+            font-size: 1.2rem;
+            color: black;
+            margin-bottom: 1rem;
+        }
+
+        .careerList {
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem auto;
+            /* Center align the list */
+            font-family: Poppins, sans-serif;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            text-align: center;
+            /* Center align text */
+            line-height: 1.6;
+        }
+
+        .careerList li {
+            padding: 8px 0;
+        }
+
+        .attemptButton {
+            background-color: white;
+            border: 2px solid var(--primary-color);
+            font-family: Poppins;
+            font-size: 18px;
+            padding: 8px 16px;
+            transition: 0.3s;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+
+        .attemptButton:hover {
+            background-color: var(--primary-color);
+            color: white;
         }
     </style>
 </head>
 
 <body>
-    <table border="1" cellspacing="0">
-        <tr class="tableHeader">
-            <th> &nbsp;&nbsp;&nbsp;</th>
-            <th>Career Option</th>
-        </tr>
-        {% for i in results %}
-        <tr>
-            <td>{{ forloop.counter }}</td>
-            <td>{{ i }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="palette">
+        <div class="logoContainer">
+            <img src="{% static 'logo.png' %}" alt="Logo">
+        </div>
+        <div class="textContainer">
+            <h1>AcadQuest</h1>
+            <p>The quest that never ends...</p>
+        </div>
+    </div>
+    <div class="formContainer">
+        <h1>Congratulations!! {{username}} for completing the test</h1>
+        <h2>Below are the list of careers most relevant to you:</h2>
+        <ul class="careerList">
+            {% for career in results%}
+            <li>{{career}}</li>
+            {% endfor %}
+        </ul>
+        <a class="attemptButton" href="{% url 'CATApp:index' %}">Attempt Again</a>
+    </div>
 </body>
 
 </html>

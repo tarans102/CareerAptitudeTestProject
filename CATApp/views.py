@@ -11,6 +11,7 @@ def index(request):
 def question(request, question_number):
     if question_number == 1:
         request.session.flush()
+        request.session["username"] = request.POST["name"]
     question = Question.objects.get(question_number=question_number)
     if question:
         return render(request, "question.html", context={"question": question})
@@ -51,4 +52,8 @@ def results(request):
     }
     keys = list(sorted_dict.keys())[0:5]
     new_dict = {key: sorted_dict[key] for key in keys}
-    return render(request, "result.html", context={"results": new_dict})
+    return render(
+        request,
+        "result.html",
+        context={"results": new_dict, "username": request.session["username"]},
+    )

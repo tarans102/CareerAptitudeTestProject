@@ -1,46 +1,113 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Question {{question.id}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
+    <title>Question 1</title>
     <style>
         :root {
             --primary-color: #8c2c8d;
             --primary-color-hover: #6e226f;
+            --secondary-color: #d182d4;
+            --palette-color: #7a1f79;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #c9d6ff;
+            background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+        }
+
+        .palette {
+            box-sizing: border-box;
+            background-color: var(--palette-color);
+            width: 100%;
+            padding: 16px;
+            text-align: left;
+            color: #ffffff;
+            font-family: Poppins, sans-serif;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .palette .logoContainer {
+            background-color: var(--primary-color);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+            border: 3px solid #ffffff;
+        }
+
+        .palette .logoContainer img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .palette .textContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .palette h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .palette p {
+            margin: 0;
+            font-size: 1rem;
         }
 
         .formContainer {
-            background-color: rgb(222, 222, 222);
-            border-radius: 25px;
-            width: max-content;
-            height: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            padding: 1.5rem;
+            box-sizing: border-box;
             position: relative;
+            box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2);
         }
 
         .questionContainer {
-            user-select: none;
             background-color: var(--primary-color);
-            width: 556px;
             color: white;
-            border-radius: 25px 25px 0 0;
+            border-radius: 10px;
             padding: 16px;
             box-sizing: border-box;
-            font-size: 28px;
+            font-size: 24px;
             font-family: Poppins;
             margin: 0 0 8px 0;
         }
 
         .questionLabel {
-            background-color: #e691e8;
+            background-color: var(--secondary-color);
             color: var(--primary-color);
             font-size: 12px;
             font-family: Montserrat;
@@ -54,17 +121,25 @@
         .optionsContainer {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            padding: 0 16px;
+            box-sizing: border-box;
         }
 
         .option {
-            box-sizing: content-box;
+            box-sizing: border-box;
             background-color: rgb(255, 255, 255);
-            padding: 12px;
-            margin: 8px 16px;
-            width: 500px;
+            padding: 12px 20px;
+            /* Adjusted padding */
+            margin: 8px 0;
+            width: 100%;
+            max-width: 600px;
+            /* Adjusted max-width */
             border-radius: 50px;
+            border: 2px solid var(--primary-color);
             font-family: Montserrat;
             transition: 0.3s;
+            text-align: center;
         }
 
         .option:hover {
@@ -84,16 +159,31 @@
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+            cursor: not-allowed;
         }
 
-        .nextButton:hover {
+        .nextButton.enabled {
+            cursor: pointer;
             background-color: var(--primary-color);
             color: white;
+        }
+
+        .nextButton.enabled:hover {
+            background-color: var(--primary-color-hover);
         }
     </style>
 </head>
 
 <body>
+    <div class="palette">
+        <div class="logoContainer">
+            <img src="{% static 'logo.png' %}" alt="Logo">
+        </div>
+        <div class="textContainer">
+            <h1>AcadQuest</h1>
+            <p>The quest that never ends...</p>
+        </div>
+    </div>
     <div class="formContainer">
         <form method="post" action="{% url 'CATApp:answer' question.question_number %}" id="form1">
             {% csrf_token %}
@@ -109,7 +199,7 @@
                 </div>
                 {% endfor %}
             </div>
-            <button class="nextButton" type="submit" form="form1">Next</button>
+            <button class="nextButton" type="submit" id="nextButton" disabled>Next</button>
         </form>
     </div>
     <script>
@@ -118,18 +208,42 @@
         var primaryColorHover = root.getPropertyValue('--primary-color-hover');
 
         var allOptions = document.querySelectorAll(".option");
+        var nextButton = document.getElementsByClassName("nextButton")[0];
+
         function selectOption(e) {
-            radio = e.target.querySelector("input")
+            var target;
+            if (!e.target.classList.contains("option")) {
+                target = e.target.parentElement;
+            } else {
+                target = e.target
+            }
+            var radio = target.querySelector("input")
             radio.checked = !radio.checked;
             for (var i = 0; i < allOptions.length; i++) {
                 allOptions[i].style.backgroundColor = "white";
                 allOptions[i].style.color = "black";
             }
-            e.target.style.backgroundColor = primaryColor;
-            e.target.style.color = "white";
+
+            if (radio.checked) {
+                target.style.backgroundColor = primaryColor;
+                target.style.color = "white";
+                nextButton.disabled = false;
+                nextButton.classList.add("enabled");
+                nextButton.classList.remove("disabled");
+            } else {
+                nextButton.disabled = true;
+                nextButton.classList.add("disabled");
+                nextButton.classList.remove("enabled");
+            }
         }
 
         function hoverOption(e) {
+            var target;
+            if (!e.target.classList.contains("option")) {
+                target = e.target.parentElement;
+            } else {
+                target = e.target
+            }
             for (var i = 0; i < allOptions.length; i++) {
                 if (!allOptions[i].querySelector("input").checked) {
                     allOptions[i].style.backgroundColor = "white";
@@ -137,10 +251,10 @@
                     allOptions[i].style.backgroundColor = primaryColor
                 }
             }
-            if (!e.target.querySelector("input").checked) {
-                e.target.style.backgroundColor = "#bbbbbb"
+            if (!target.querySelector("input").checked) {
+                target.style.backgroundColor = "#bbbbbb"
             } else {
-                e.target.style.backgroundColor = primaryColorHover
+                target.style.backgroundColor = primaryColorHover
             }
         }
 
