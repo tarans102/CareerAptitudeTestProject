@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap" rel="stylesheet">
-    <title>Question 1</title>
+    <title>Question {{question.question_number}}</title>
     <style>
         :root {
             --primary-color: #8c2c8d;
@@ -315,7 +315,7 @@
         function loadGoogleTranslate() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: 'en,fr,es,de,zh-CN,hi', // Add more languages as needed
+                includedLanguages: 'en,hi,mr', // Add more languages as needed
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
                 autoDisplay: false
             }, 'google_translate_element');
