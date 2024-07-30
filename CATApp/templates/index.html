@@ -191,6 +191,7 @@
             <p>The quest that never ends...</p>
         </div>
     </div>
+    <div id="google_translate_element" style="position: absolute; top: 10px; right: 10px;"></div>
     <div class="formContainer">
         <div class="logoContainer">
             <img src="{% static 'logo.png' %}" alt="Logo">
@@ -205,6 +206,7 @@
             <button class="startButton" type="submit" id="startButton" disabled>Start Test</button>
         </form>
     </div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
     <script>
         var nameInput = document.getElementById("name");
         var startButton = document.getElementById("startButton");
@@ -239,6 +241,52 @@
                 document.getElementById("welcomeForm").submit();
             }
         });
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,fr,es,de,zh-CN,hi', // Add more languages as needed
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var selectedLang = getCookie('googtrans');
+            if (selectedLang) {
+                document.querySelector('html').setAttribute('lang', selectedLang.split('/')[2]);
+            }
+
+            var intervalId = setInterval(function () {
+                var lang = getCookie('googtrans');
+                if (lang) {
+                    clearInterval(intervalId);
+                    setCookie('googtrans', lang, 365);
+                }
+            }, 1000);
+        });
+
     </script>
 </body>
 
