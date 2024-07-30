@@ -91,10 +91,11 @@
             max-width: 450px;
             padding: 2rem;
             box-sizing: border-box;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2);
             text-align: center;
-            /* Space below the palette */
         }
 
         .formContainer h1 {
@@ -124,8 +125,13 @@
             line-height: 1.6;
         }
 
-        .careerList li {
-            padding: 8px 0;
+        .career {
+            padding: 4px 0;
+            border-bottom: 1px solid #808080;
+        }
+
+        .career:last-child {
+            border-bottom: 0;
         }
 
         .attemptButton {
@@ -159,13 +165,13 @@
         </div>
     </div>
     <div class="formContainer">
-        <h1>Congratulations!! {{username}} for completing the test</h1>
+        <h1>Congratulations {{username}} on completing the test</h1>
         <h2>Below are the list of careers most relevant to you:</h2>
-        <ul class="careerList">
+        <div class="careerList">
             {% for career in results%}
-            <li>{{career}}</li>
+            <div class="career">{{career}}</div>
             {% endfor %}
-        </ul>
+        </div>
         <a class="attemptButton" href="{% url 'CATApp:index' %}">Attempt Again</a>
     </div>
 </body>

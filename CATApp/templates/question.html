@@ -89,7 +89,9 @@
             max-width: 600px;
             padding: 1.5rem;
             box-sizing: border-box;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2);
         }
 
@@ -183,6 +185,9 @@
             <p>The quest that never ends...</p>
         </div>
     </div>
+    {% if error_message %}
+    <div class="error">{{ error_message }}</div>
+    {% endif %}
     <div class="formContainer">
         <form method="post" action="{% url 'CATApp:answer' question.question_number %}" id="form1">
             {% csrf_token %}

@@ -91,7 +91,9 @@
             max-width: 450px;
             padding: 2rem;
             box-sizing: border-box;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.2);
             text-align: center;
             /* Space below the palette */
@@ -198,7 +200,7 @@
             {% csrf_token %}
             <div class="inputContainer">
                 <label for="name">Enter your name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Username" required>
             </div>
             <button class="startButton" type="submit" id="startButton" disabled>Start Test</button>
         </form>
