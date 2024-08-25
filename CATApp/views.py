@@ -1,10 +1,11 @@
 import json
 
-from CATApp.models import Choice, Question, Response
 from django.contrib.auth.decorators import login_required, permission_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+
+from CATApp.models import Choice, Question, Response
 
 
 # Create your views here.
@@ -96,7 +97,11 @@ def retrieveQuestionDatabase(request):
 
     questionsFile = open("questions.json", "w")
     questionsFile.write(json.dumps(questionsDict, indent=4))
-    return render(request, "database.html", context={"database": questionsDict})
+    return render(
+        request,
+        "database.html",
+        context={"database": json.dumps(questionsDict, indent=4)},
+    )
 
 
 @login_required
@@ -112,7 +117,11 @@ def retrieveChoiceDatabase(request):
         }
     choicesFile = open("choices.json", "w")
     choicesFile.write(json.dumps(choicesDict, indent=4))
-    return render(request, "database.html", context={"database": choicesDict})
+    return render(
+        request,
+        "database.html",
+        context={"database": json.dumps(choicesDict, indent=4)},
+    )
 
 
 @login_required
@@ -128,7 +137,11 @@ def retrieveResponseDatabase(request):
         }
     responsesFile = open("responses.json", "w")
     responsesFile.write(json.dumps(responsesDict, indent=4))
-    return render(request, "database.html", context={"database": responsesDict})
+    return render(
+        request,
+        "database.html",
+        context={"database": json.dumps(responsesDict, indent=4)},
+    )
 
 
 @login_required
