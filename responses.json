@@ -1,0 +1,382 @@
+{
+    "1": {
+        "username": "User1",
+        "response": {
+            "1": 2,
+            "2": 6,
+            "3": 13
+        },
+        "results": {
+            "Actuary": 1,
+            "Athlete": 1,
+            "Botanist": 1,
+            "Data Analyst": 1,
+            "Sports Coach": 1,
+            "Mathematician": 1,
+            "Horticulturist": 1,
+            "Physical Therapist": 1,
+            "Landscape Architect": 1
+        }
+    },
+    "2": {
+        "username": "User1",
+        "response": {
+            "1": 2,
+            "2": 8,
+            "3": 14
+        },
+        "results": {
+            "Actuary": 1,
+            "Data Analyst": 1,
+            "Photographer": 1,
+            "Videographer": 1,
+            "Mathematician": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Photojournalist": 1,
+            "Software Tester": 1
+        }
+    },
+    "3": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "4": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "5": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "6": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "7": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "8": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "9": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "10": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "11": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "12": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "13": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "14": {
+        "username": "User1",
+        "response": {
+            "1": 3,
+            "2": 8,
+            "3": 12
+        },
+        "results": {
+            "Editor": 1,
+            "Writer": 1,
+            "Teacher": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Esports Player": 1,
+            "Game Developer": 1,
+            "Software Tester": 1,
+            "Software Developer": 1
+        }
+    },
+    "15": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 2,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Actuary": 1,
+            "Athlete": 1,
+            "Data Analyst": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Mathematician": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Software Developer": 1
+        }
+    },
+    "16": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 1,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Doctor": 1,
+            "Athlete": 1,
+            "Engineer": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Research Scientist": 1,
+            "Software Developer": 1
+        }
+    },
+    "17": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 1,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Doctor": 1,
+            "Athlete": 1,
+            "Engineer": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Research Scientist": 1,
+            "Software Developer": 1
+        }
+    },
+    "18": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 1,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Doctor": 1,
+            "Athlete": 1,
+            "Engineer": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Research Scientist": 1,
+            "Software Developer": 1
+        }
+    },
+    "19": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 1,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Doctor": 1,
+            "Athlete": 1,
+            "Engineer": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Research Scientist": 1,
+            "Software Developer": 1
+        }
+    },
+    "20": {
+        "username": "AcadQuest",
+        "response": {
+            "1": 1,
+            "2": 6,
+            "3": 12
+        },
+        "results": {
+            "Doctor": 1,
+            "Athlete": 1,
+            "Engineer": 1,
+            "Sports Coach": 1,
+            "IT Specialist": 1,
+            "Web Developer": 1,
+            "Physical Therapist": 1,
+            "Research Scientist": 1,
+            "Software Developer": 1
+        }
+    }
+}

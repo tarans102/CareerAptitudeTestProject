@@ -1,5 +1,9 @@
+import json
+
 from CATApp.models import Choice, Question, Response
-from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required, permission_required
+from django.core.exceptions import ObjectDoesNotExist
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 
 
@@ -75,3 +79,120 @@ def results(request):
             "username": request.session["username"],
         },
     )
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def retrieveQuestionDatabase(request):
+    response = HttpResponse(content_type="text/csv")
+    response["Content-Disposition"] = 'attachment; filename = "database.json"'
+    allQuestions = Question.objects.all()
+    questionsDict = {}
+    for question in allQuestions:
+        questionsDict[question.id] = {
+            "question_number": question.question_number,
+            "question_text": question.question_text,
+        }
+
+    questionsFile = open("questions.json", "w")
+    questionsFile.write(json.dumps(questionsDict, indent=4))
+    return render(request, "database.html", context={"database": questionsDict})
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def retrieveChoiceDatabase(request):
+    allChoices = Choice.objects.all()
+    choicesDict = {}
+    for choice in allChoices:
+        choicesDict[choice.id] = {
+            "question": choice.question.id,
+            "choice_text": choice.choice_text,
+            "career": choice.career,
+        }
+    choicesFile = open("choices.json", "w")
+    choicesFile.write(json.dumps(choicesDict, indent=4))
+    return render(request, "database.html", context={"database": choicesDict})
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def retrieveResponseDatabase(request):
+    allResponses = Response.objects.all()
+    responsesDict = {}
+    for response in allResponses:
+        responsesDict[response.id] = {
+            "username": response.username,
+            "response": response.response,
+            "results": response.results,
+        }
+    responsesFile = open("responses.json", "w")
+    responsesFile.write(json.dumps(responsesDict, indent=4))
+    return render(request, "database.html", context={"database": responsesDict})
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def updateQuestionDatabase(request):
+    questionFile = open("questions.json", "r")
+    questionDict = json.loads(questionFile.read())
+
+    for i in questionDict.keys():
+        try:
+            question = Choice.objects.get(id=int(i))
+            question.question_number = questionDict[i]["question_number"]
+            question.question_text = questionDict[i]["question_text"]
+        except ObjectDoesNotExist:
+            print("Not found. Will create")
+            Question.objects.create(
+                question_number=questionDict[i]["question_number"],
+                question_text=questionDict[i]["question_text"],
+            )
+
+    return render(request, "database.html", context={"database": questionDict})
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def updateChoiceDatabase(request):
+    choiceFile = open("choices.json", "r")
+    choiceDict = json.loads(choiceFile.read())
+
+    for i in choiceDict.keys():
+        try:
+            choice = Choice.objects.get(id=int(i))
+            choice.question_id = choiceDict[i]["question"]
+            choice.choice_text = choiceDict[i]["choice_text"]
+            choice.career = choiceDict[i]["career"]
+        except ObjectDoesNotExist:
+            print("Not found. Will create")
+            Choice.objects.create(
+                question_id=choiceDict[i]["question"],
+                choice_text=choiceDict[i]["choice_text"],
+                career=choiceDict[i]["career"],
+            )
+
+    return render(request, "database.html", context={"database": choiceDict})
+
+
+@login_required
+@permission_required("CATApp.retrieveDatabase", raise_exception=True)
+def updateResponseDatabase(request):
+    responseFile = open("responses.json", "r")
+    responseDict = json.loads(responseFile.read())
+
+    for i in responseDict.keys():
+        try:
+            response = Response.objects.get(id=int(i))
+            response.username = responseDict[i]["username"]
+            response.response = responseDict[i]["response"]
+            response.results = responseDict[i]["results"]
+        except ObjectDoesNotExist:
+            print("Not found. Will create")
+            Response.objects.create(
+                username=responseDict[i]["username"],
+                response=responseDict[i]["response"],
+                results=responseDict[i]["results"],
+            )
+
+    return render(request, "database.html", context={"database": responseDict})

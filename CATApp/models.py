@@ -35,3 +35,6 @@ class Response(models.Model):
     username = models.CharField(max_length=200)
     response = models.JSONField(None)
     results = models.JSONField(None)
+
+    def __str__(self):
+        return "Response from %s" % self.username
